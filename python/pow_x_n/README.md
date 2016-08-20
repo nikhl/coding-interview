@@ -1,5 +1,5 @@
 
-[nth power of x](https://github.com/nikhl/coding-interview/blob/master/python/pow_x_n/README.png?raw=true)
+![nth power of x](https://github.com/nikhl/coding-interview/blob/master/python/pow_x_n/README.png?raw=true)
 
 
 <!---
