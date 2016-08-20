@@ -3,7 +3,7 @@
 
 
 <!---
-From http://mathurl.com/huppj7g
+From http://mathurl.com/jld6kgc
 
 ##### BEGIN
 \textbf{nth\_power of a number}
@@ -18,7 +18,7 @@ To calculate the \textbf{n}th power, we first compute \textbf{(n/2)}th power and
 \textbf{Time complexity is } \[\theta(log(n))\]
 \\
 
-\textbf{Space complexity is} \[\theta(1)\]
+\textbf{Space complexity is} \[\theta(log(n))\]
 ##### END
 
 -->
