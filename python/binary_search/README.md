@@ -1,9 +1,9 @@
 
-[](https://github.com/nikhl/coding-interview/blob/master/python/binary_search/README.png?raw=true)
+[Binary Search](https://github.com/nikhl/coding-interview/blob/master/python/binary_search/README.png?raw=true)
 
 
 <!---
-From http://mathurl.com/huppj7g
+From http://mathurl.com/hpqgr7l
 
 ##### BEGIN
 \textbf{Binary Search}
