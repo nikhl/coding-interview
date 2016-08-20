@@ -75,6 +75,7 @@ class TestBinarySearch(unittest.TestCase):
 		index = 1
 		self.assertEqual(index, binary_search(arr, key))
 
-
+# You can run all testcases by navigating to this directory
+# and run "python binary_search.py"
 if __name__ == "__main__":
 	unittest.main()
