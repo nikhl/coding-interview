@@ -1,5 +1,5 @@
 
-[](https://github.com/nikhl/coding-interview/blob/master/python/pow_x_n/README.png?raw=true)
+[](https://github.com/nikhl/coding-interview/blob/master/python/binary_search/README.png?raw=true)
 
 
 <!---
