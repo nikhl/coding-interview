@@ -3,7 +3,7 @@
 
 
 <!---
-From http://mathurl.com/jl6yqld
+From http://mathurl.com/zrcad4n
 
 ##### BEGIN
 \textbf{Selection sort}
@@ -17,12 +17,12 @@ In worst case, the first iteration takes \textbf{n} steps, the second iteration 
 \[n + (n-1) + (n-2) + (n-k) + 3 + 2 + 1 = \frac{n(n-1)}{2} = n^{2}\]
 \\
 
-So, Time complexity is 
+So, \textbf{Time complexity} is 
 
 \[\theta(n^{2})\]
 \\
 
-Space complexity is constant as we are doing the sorting inplace with no extra space
+\textbf{Space complexity} is constant as we are doing the sorting inplace with no extra space
 
 \[\theta(1)\]
 ##### END
