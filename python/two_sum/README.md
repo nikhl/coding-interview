@@ -14,6 +14,8 @@ return [0, 1].
 
 # version 2
 
+(Return all pairs)
+
 Given an array of integers, return indices of the two numbers such that they add up to a specific target. There are multiple pairs that adds up to a target
 
 Example:
