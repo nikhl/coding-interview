@@ -6,9 +6,11 @@ def zigzag_arrangement(arr):
 		return arr
 
 	for i in xrange(length-1):
+		# if even index, make sure arr[i] < arr[i+1]
 		if i%2==0:
 			if arr[i] > arr[i+1]:
 				arr[i], arr[i+1] = arr[i+1], arr[i]
+		# if odd index, make sure arr[i] > arr[i+1]
 		elif arr[i] < arr[i+1]:
 			arr[i], arr[i+1] = arr[i+1], arr[i]
 
