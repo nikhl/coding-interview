@@ -13,32 +13,32 @@ def insertion_sort(nums):
 
 class TestInsertionSort(unittest.TestCase):
 
-	def test_insertio_sort_1(self):
+	def test_insertion_sort_1(self):
 		given = [2,4,3,1,5]
 		expected = [1,2,3,4,5]
 		self.assertEqual(expected, insertion_sort(given))
 
-	def test_insertio_sort_2(self):
+	def test_insertion_sort_2(self):
 		given = [5,4,3,2,1]
 		expected = [1,2,3,4,5]
 		self.assertEqual(expected, insertion_sort(given))
 
-	def test_insertio_sort_3(self):
+	def test_insertion_sort_3(self):
 		given = [2,7,4,1,5,3]
 		expected = [1,2,3,4,5,7]
 		self.assertEqual(expected, insertion_sort(given))
 
-	def test_insertio_sort_4(self):
+	def test_insertion_sort_4(self):
 		given = [2]
 		expected = [2]
 		self.assertEqual(expected, insertion_sort(given))
 
-	def test_insertio_sort_5(self):
+	def test_insertion_sort_5(self):
 		given = []
 		expected = []
 		self.assertEqual(expected, insertion_sort(given))
 
-	def test_insertio_sort_6(self):
+	def test_insertion_sort_6(self):
 		given = [1,3,5,7,9,10]
 		expected = [1,3,5,7,9,10]
 		self.assertEqual(expected, insertion_sort(given))
