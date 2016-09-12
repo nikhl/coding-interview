@@ -14,3 +14,4 @@
 12. [Decompress a compressed string](https://github.com/nikhl/coding-interview/tree/master/python/string_decompress)
 13. [Two sum problem](https://github.com/nikhl/coding-interview/tree/master/python/two_sum)
 14. [String rotation](https://github.com/nikhl/coding-interview/tree/master/python/string_rotation)
+15. [Zigzag arrangement](https://github.com/nikhl/coding-interview/tree/master/python/zigzag_arrangement)
