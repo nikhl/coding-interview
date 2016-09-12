@@ -17,3 +17,4 @@
 15. [String rotation](https://github.com/nikhl/coding-interview/tree/master/python/string_rotation)
 16. [Zigzag arrangement](https://github.com/nikhl/coding-interview/tree/master/python/zigzag_arrangement)
 17. [Product of array except self](https://github.com/nikhl/coding-interview/tree/master/python/product_of_array_except_self)
+18. [Majority element](https://github.com/nikhl/coding-interview/tree/master/python/majority_element)

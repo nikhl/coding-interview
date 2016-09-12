@@ -38,18 +38,15 @@ class TestMajorityElement(unittest.TestCase):
 		self.assertEqual(4,get_majority_element([1,2,3,4,4,4,4,5,4]))
 
 	def test_majority_element_2(self):
-		self.assertEqual(None,get_majority_element([]))
-
-	def test_majority_element_3(self):
 		self.assertEqual(4,get_majority_element([4]))
 
-	def test_majority_element_4(self):
+	def test_majority_element_3(self):
 		self.assertEqual(4,get_majority_element([1,4,1,4,1,4,4]))
 
-	def test_majority_element_5(self):
+	def test_majority_element_4(self):
 		self.assertEqual(3,get_majority_element([1,2,3,2,3,3]))
 
-	def test_majority_element_6(self):
+	def test_majority_element_5(self):
 		self.assertEqual(0,get_majority_element([0,0,0]))
 
 if __name__ == "__main__":
