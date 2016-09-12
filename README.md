@@ -16,3 +16,4 @@
 14. [String rotation](https://github.com/nikhl/coding-interview/tree/master/python/string_rotation)
 15. [Zigzag arrangement](https://github.com/nikhl/coding-interview/tree/master/python/zigzag_arrangement)
 16. [Product of array except self](https://github.com/nikhl/coding-interview/tree/master/python/product_of_array_except_self)
+17. [Heap sort](https://github.com/nikhl/coding-interview/tree/master/python/sorting/heap_sort)
