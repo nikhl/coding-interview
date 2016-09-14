@@ -22,3 +22,4 @@
 20. [Search insert position](https://github.com/nikhl/coding-interview/tree/master/python/search_insert_position)
 21. [Contains duplicate](https://github.com/nikhl/coding-interview/tree/master/python/contains_duplicate)
 22. [Hamming weight | Population count | Digit sum | Count set bits in Integer](https://github.com/nikhl/coding-interview/tree/master/python/hamming_weight)
+23. [Missing number](https://github.com/nikhl/coding-interview/tree/master/python/missing_number)
