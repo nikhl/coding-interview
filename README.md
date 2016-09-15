@@ -27,3 +27,4 @@
 ### Data structures
 
 1. [Linked List](https://github.com/nikhl/coding-interview/tree/master/python/linked_list)
+2. [Stack using array](https://github.com/nikhl/coding-interview/tree/master/python/stack_using_array)
