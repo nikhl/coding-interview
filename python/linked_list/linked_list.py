@@ -63,10 +63,10 @@ class LinkedList:
 				while curr.get_next().get_next():
 					curr = curr.get_next()
 
-				elem = curr.get_next().get_data()
+				elem = curr.get_next()
 				curr.set_next(None)
 			else:
-				elem = self._head.get_data()
+				elem = self._head
 				self._head = None
 
 		return elem
@@ -149,10 +149,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual([1,2,3,4,5], self.ll.get_elements_list())
-		self.assertEqual(1, self.ll.delete_at_head())
-		self.assertEqual(2, self.ll.delete_at_head())
+		self.assertEqual(1, self.ll.delete_at_head().get_data())
+		self.assertEqual(2, self.ll.delete_at_head().get_data())
 		self.assertEqual([3,4,5], self.ll.get_elements_list())
-		self.assertEqual(3, self.ll.delete_at_head())
+		self.assertEqual(3, self.ll.delete_at_head().get_data())
 		self.assertEqual([4,5], self.ll.get_elements_list())
 
 	def test_delete_at_tail(self):
@@ -164,10 +164,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual([1,2,3,4,5], self.ll.get_elements_list())
-		self.assertEqual(5, self.ll.delete_at_tail())
-		self.assertEqual(4, self.ll.delete_at_tail())
+		self.assertEqual(5, self.ll.delete_at_tail().get_data())
+		self.assertEqual(4, self.ll.delete_at_tail().get_data())
 		self.assertEqual([1,2,3], self.ll.get_elements_list())
-		self.assertEqual(3, self.ll.delete_at_tail())
+		self.assertEqual(3, self.ll.delete_at_tail().get_data())
 		self.assertEqual([1,2], self.ll.get_elements_list())
 
 	def test_search(self):
@@ -179,10 +179,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual(4, self.ll.search(4))
-		self.assertEqual(5, self.ll.delete_at_tail())
-		self.assertEqual(4, self.ll.delete_at_tail())
+		self.assertEqual(5, self.ll.delete_at_tail().get_data())
+		self.assertEqual(4, self.ll.delete_at_tail().get_data())
 		self.assertEqual(-1, self.ll.search(4))
-		self.assertEqual(3, self.ll.delete_at_tail())
+		self.assertEqual(3, self.ll.delete_at_tail().get_data())
 		self.assertEqual(2, self.ll.search(2))
 
 if __name__ == "__main__":
