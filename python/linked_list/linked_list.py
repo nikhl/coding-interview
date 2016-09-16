@@ -6,16 +6,16 @@ class Node:
 		self._data = data
 		self._next = next
 
-	def setNext(self, node):
+	def set_next(self, node):
 		self._next = node
 
-	def getNext(self):
+	def get_next(self):
 		return self._next
 
-	def setData(self, data):
+	def set_data(self, data):
 		self._data = data
 
-	def getData(self):
+	def get_data(self):
 		return self._data
 
 class LinkedList:
@@ -23,9 +23,12 @@ class LinkedList:
 	def __init__(self, head=None):
 		self._head = head
 
+	def get_head(self):
+		return self._head
+
 	def insert_at_head(self, node):
 		# takes constant time, O(1)
-		node.setNext(self._head)
+		node.set_next(self._head)
 		self._head = node
 
 	def insert_at_tail(self, node):
@@ -35,29 +38,38 @@ class LinkedList:
 		else:
 			curr = self._head
 			# traverse linkedlist until we reach last element
-			while curr.getNext():
-				curr = curr.getNext()
+			while curr.get_next():
+				curr = curr.get_next()
 
-			curr.setNext(node)
+			curr.set_next(node)
 
 	def delete_at_head(self):
 		# takes constant time, O(1)
+		elem = None
 		if self._head:
-			self._head = self._head.getNext()
+			elem = self.get_head()
+			self._head = self._head.get_next()
+
+		return elem
 
 	def delete_at_tail(self):
+		elem = None
 		# takes constant time, O(n)
 		if self._head:
-			if self._head.getNext():
+			if self._head.get_next():
 				curr = self._head
 				# traverse linkedlist until we reach
 				# last but one node
-				while curr.getNext().getNext():
-					curr = curr.getNext()
+				while curr.get_next().get_next():
+					curr = curr.get_next()
 
-				curr.setNext(None)
+				elem = curr.get_next().get_data()
+				curr.set_next(None)
 			else:
+				elem = self._head.get_data()
 				self._head = None
+
+		return elem
 
 	def search(self, value):
 		# search for a node with data=value and return the
@@ -67,7 +79,7 @@ class LinkedList:
 		if not self._head:
 			return -1
 
-		if self._head.getData() == value:
+		if self._head.get_data() == value:
 			return 1
 
 		counter = 1
@@ -77,11 +89,11 @@ class LinkedList:
 		# or we reach end of linkedlist in which case
 		# return -1
 		while current:
-			if current.getData() == value:
+			if current.get_data() == value:
 				return counter
 
 			counter += 1
-			current = current.getNext()
+			current = current.get_next()
 
 		return -1
 
@@ -93,8 +105,8 @@ class LinkedList:
 		elements = []
 
 		while curr:
-			elements.append(curr.getData())
-			curr = curr.getNext()
+			elements.append(curr.get_data())
+			curr = curr.get_next()
 
 		return elements
 
@@ -137,10 +149,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual([1,2,3,4,5], self.ll.get_elements_list())
-		self.ll.delete_at_head()
-		self.ll.delete_at_head()
+		self.assertEqual(1, self.ll.delete_at_head())
+		self.assertEqual(2, self.ll.delete_at_head())
 		self.assertEqual([3,4,5], self.ll.get_elements_list())
-		self.ll.delete_at_head()
+		self.assertEqual(3, self.ll.delete_at_head())
 		self.assertEqual([4,5], self.ll.get_elements_list())
 
 	def test_delete_at_tail(self):
@@ -152,10 +164,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual([1,2,3,4,5], self.ll.get_elements_list())
-		self.ll.delete_at_tail()
-		self.ll.delete_at_tail()
+		self.assertEqual(5, self.ll.delete_at_tail())
+		self.assertEqual(4, self.ll.delete_at_tail())
 		self.assertEqual([1,2,3], self.ll.get_elements_list())
-		self.ll.delete_at_tail()
+		self.assertEqual(3, self.ll.delete_at_tail())
 		self.assertEqual([1,2], self.ll.get_elements_list())
 
 	def test_search(self):
@@ -167,10 +179,10 @@ class TestLinkedList(unittest.TestCase):
 		self.ll.insert_at_tail(Node(4))
 		self.ll.insert_at_tail(Node(5))
 		self.assertEqual(4, self.ll.search(4))
-		self.ll.delete_at_tail()
-		self.ll.delete_at_tail()
+		self.assertEqual(5, self.ll.delete_at_tail())
+		self.assertEqual(4, self.ll.delete_at_tail())
 		self.assertEqual(-1, self.ll.search(4))
-		self.ll.delete_at_tail()
+		self.assertEqual(3, self.ll.delete_at_tail())
 		self.assertEqual(2, self.ll.search(2))
 
 if __name__ == "__main__":
