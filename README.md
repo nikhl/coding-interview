@@ -30,3 +30,4 @@
 1. [Linked List](https://github.com/nikhl/coding-interview/tree/master/python/linked_list)
 2. [Stack using array](https://github.com/nikhl/coding-interview/tree/master/python/stack_using_array)
 3. [Stack using linked list](https://github.com/nikhl/coding_interview/tree/master/python/stack_using_linkedlist)
+4. [Doubly linked list](https://github.com/nikhl/coding_interview/tree/master/python/doubly_linked_list)
