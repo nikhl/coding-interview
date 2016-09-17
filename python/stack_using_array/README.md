@@ -1,5 +1,5 @@
 ### Stack using array
 
-* push
-* pop
-* top
+* push takes amortized O(1) time
+* pop takes O(1) time
+* top takes O(1) time
