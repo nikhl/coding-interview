@@ -32,3 +32,4 @@
 3. [Stack using linked list](https://github.com/nikhl/coding_interview/tree/master/python/stack_using_linkedlist)
 4. [Doubly linked list](https://github.com/nikhl/coding_interview/tree/master/python/doubly_linked_list)
 5. [Queue using doubly linked list](https://github.com/nikhl/coding_interview/tree/master/python/queue_using_doubly_linked_list)
+6. [Priority Queue Max heap](https://github.com/nikhl/coding_interview/tree/master/python/priority_queue/max_heap)
