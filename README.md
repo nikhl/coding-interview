@@ -24,6 +24,7 @@
 22. [Hamming weight | Population count | Digit sum | Count set bits in Integer](https://github.com/nikhl/coding-interview/tree/master/python/hamming_weight)
 23. [Missing number](https://github.com/nikhl/coding-interview/tree/master/python/missing_number)
 24. [Fisher Yates shuffle](https://github.com/nikhl/coding-interview/tree/master/python/fisher_yates_shuffle)
+25. [Insertion sort using linked list](https://github.com/nikhl/coding_interview/tree/master/python/insertion_sort_using_linked_list)
 
 ### Data structures
 
