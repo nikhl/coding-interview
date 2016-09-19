@@ -25,6 +25,7 @@
 23. [Missing number](https://github.com/nikhl/coding-interview/tree/master/python/missing_number)
 24. [Fisher Yates shuffle](https://github.com/nikhl/coding-interview/tree/master/python/fisher_yates_shuffle)
 25. [Insertion sort using linked list](https://github.com/nikhl/coding_interview/tree/master/python/insertion_sort_using_linked_list)
+26. [Sub array with given sum](https://github.com/nikhl/coding_interview/tree/master/python/subarray_with_given_sum)
 
 ### Data structures
 
@@ -35,4 +36,3 @@
 5. [Queue using doubly linked list](https://github.com/nikhl/coding_interview/tree/master/python/queue_using_doubly_linked_list)
 6. [Priority Queue Max heap](https://github.com/nikhl/coding_interview/tree/master/python/priority_queue/max_heap)
 7. [Priority Queue Min heap](https://github.com/nikhl/coding_interview/tree/master/python/priority_queue/min_heap)
-8. [Sub array with given sum](https://github.com/nikhl/coding_interview/tree/master/python/subarray_with_given_sum)
